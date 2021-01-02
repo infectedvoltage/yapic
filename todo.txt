@@ -1,0 +1,7 @@
+[to do list]
+
+- create autodiscovery batch script
+-create deployment playbook
+  -role for master node [structure defined]
+  -role for worker node [structure defined]
+  -automatic inventory file
