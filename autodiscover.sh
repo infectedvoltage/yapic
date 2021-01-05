@@ -20,7 +20,10 @@ scan_for_pis() {
 }
 
 check_if_clusterable(){
-    
+    while read line
+    do
+        ssh ubuntu@$line hostname
+    done < /tmp/pi_ips_clean.log
 }
 
 
@@ -29,4 +32,4 @@ get_network_range
 scan_for_pis
 
 echo $ip_clean
-echo $pi_ips | sed 's/[()]//g'
+check_if_clusterable
