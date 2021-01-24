@@ -22,6 +22,7 @@ scan_for_pis() {
 check_if_clusterable(){
     while read line
     do
+    #testing
         echo $line
         ssh ubuntu@$line hostname
     done < /tmp/pi_ips_clean.log
