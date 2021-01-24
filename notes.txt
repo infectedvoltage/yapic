@@ -27,6 +27,10 @@ structure for autodiscovery
 
 
 install/run instructions:
+    -prereqs host machine :
+        -ansible
+        -nmap
+        
     -prepare raspberry pi's
         -flash os to sd card
         -boot pi
