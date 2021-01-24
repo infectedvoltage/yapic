@@ -32,7 +32,4 @@ get_network_range
 scan_for_pis
 
 echo $ip_clean
-
-
-
-#check_if_clusterable
+check_if_clusterable
