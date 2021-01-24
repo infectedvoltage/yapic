@@ -21,13 +21,6 @@ for key in ${pi_ips[@]}
 do
 echo $key
 ssh ubuntu@$key hostname
-done
-}
-
-check_if_clusterable(){
-for key in ${pi_ips[@]}
-do
-echo $key
 ssh ubuntu@$key cat /sys/firmware/devicetree/base/model
 done
 }
@@ -38,4 +31,4 @@ get_network_range
 scan_for_pis
 echo $ip_clean
 list_pis
-check_if_clusterable
+#check_if_clusterable
