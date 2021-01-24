@@ -15,10 +15,21 @@ sudo nmap -sP 192.168.1.0/24 | awk '/^Nmap/{ip=$NF}/B8:27:EB|DC:A6:32|E4:5F:01/{
 
 
 structure for autodiscovery
+    -> check dependencies on host machine
     -> scan network for pi ip's
-    -> get hardware version [cat /sys/firmware/devicetree/base/model] (default creds)
+    -> get hardware version [cat /sys/firmware/devicetree/base/model]
         -> how does clean install react to this ?
     -> display all found pi's and pick master and remove unwanted
     -> write master and workers to inventory
 
     -> cont playbook
+
+
+
+install/run instructions:
+    -prepare raspberry pi's
+        -flash os to sd card
+        -boot pi
+        -ssh to it and change password
+        -setup keyauth
+    
