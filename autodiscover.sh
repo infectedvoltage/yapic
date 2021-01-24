@@ -22,7 +22,7 @@ do
 echo $key
 ssh ubuntu@$key hostname
 ssh ubuntu@$key cat /sys/firmware/devicetree/base/model
-echo '\n'
+printf "\n"
 done
 }
 
