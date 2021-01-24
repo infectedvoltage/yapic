@@ -44,9 +44,9 @@ scan_for_pis
 
 echo $ip_clean
 
-for key in ${pi_ips[*]}
+for key in ${pi_ips[@]}
 do
-echo "$key => ${pi_ips[$key]}"
+echo $key
 done
 
 #check_if_clusterable
