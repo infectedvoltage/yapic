@@ -29,9 +29,11 @@ done
 }
 
 
-
+echo "getting network range"
 get_network_range
+echo "scanning for pis"
 scan_for_pis
 echo $ip_clean
+echo "listing pi's on the network"
 list_pis
 #check_if_clusterable
