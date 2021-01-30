@@ -20,7 +20,9 @@ list_pis(){
 for key in ${pi_ips[@]}
 do
 echo $key
+echo hostname
 ssh ubuntu@$key hostname
+echo model
 ssh ubuntu@$key cat /sys/firmware/devicetree/base/model
 printf "\n"
 done
